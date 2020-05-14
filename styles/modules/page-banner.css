@@ -1,0 +1,108 @@
+.page-banner {
+  background-color: #000;
+  background-size: cover;
+
+  @mixin atMedium {
+    min-height: initial;
+  }
+
+  @mixin atLarge {
+    min-height:initial;
+  }
+
+  &__wrapper {
+    background-color: rgba(0,0,0,.75);
+    position: static;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+  }
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    @mixin atMedium {
+      min-height:300px;
+    }
+
+    img{
+      width:120px;
+      @mixin atMedium {
+        width: 200px;
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    margin: 0 0 .25rem 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    
+    @mixin atMedium {
+      font-size: 3rem;
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  &__subtitle{
+    font-weight: 300;
+    margin: 0 0 1rem 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  
+
+  &__intro {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #EDEDED;
+    @mixin atSmall {
+      font-size: 1.65rem;
+    }
+  }
+  &__date{
+    font-size: 1.2rem;
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+  }
+
+  &__endorse{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
+    margin-top: .2rem;
+    @mixin atSmall {
+      grid-template-columns: 4fr 1fr;
+    }
+
+  }
+
+  &__endorse_text{
+    color:rgb(255, 255, 0);
+    font-size:.9rem;
+    @mixin atSmall {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__endorse_logo{
+    width:50px;
+  }
+
+  &__intro p {
+    margin: 0;
+  }
+}

@@ -1,0 +1,192 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.19rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+
+
+  &:focus{
+    outline:none;
+    box-shadow: none;
+  }
+
+  &--small {
+    font-size: 0.88rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: 300;
+  }
+
+  &--with-photo {
+    padding-left: 40px;
+    position: relative;
+  }
+
+  &--orange {
+    background-color: $lightOrange;
+    transition: all 0.5s ease-in-out;
+
+    i {
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  &--orange:hover {
+    background: linear-gradient($lightOrange, color($lightOrange b(+30%) s(+80%)));
+    color: #fff;
+    opacity: 0.95;
+    i {
+      padding-left: 10px;
+    }
+  }
+
+  &--dark-orange {
+    background-color: $darkOrange;
+    color:#fff;
+  }
+
+  &--dark-orange:hover {
+    background: linear-gradient($darkOrange, color($darkOrange b(+40%) s(+80%)));
+    color: #fff;
+  }
+
+  &--blue {
+    background-color: $mainBlue;
+    transition: all 0.5s ease-in-out;
+    i {
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  &--blue:hover {
+    background: linear-gradient(color($mainBlue b(-16%)), $mainBlue);
+    color: #fff;
+    opacity: 0.9;
+    i {
+      padding-left: 10px;
+    }
+  }
+  &--green {
+    background-color: $lightgreen;
+  }
+  
+
+  &--green:hover {
+    background: linear-gradient($lightgreen, color($lightgreen b(+30%) s(+80%)));
+    color:#fff;
+  }
+
+  &--green-outline {
+    border: 1px solid $lightgreen;
+    color: $lightgreen;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+      color: #fff;
+      background-color: $lightgreen;
+    }
+  }
+
+  &--yellow {
+    background-color: $mainYellow;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+  }
+
+  &--yellow:hover {
+    background: linear-gradient($mainYellow, color($mainYellow b(+40%) s(+80%)));
+  }
+
+  &--beige {
+    background-color: $beige;
+    color: #173f58;
+  }
+
+  &--beige:hover {
+    background-color: $mainYellow;
+  }
+
+  &--danger {
+    background-color: $darkRed;
+    transition: all .3s ease-in-out;
+  }
+  &--danger:hover {
+    color: #fff;
+    opacity: 0.9;
+    transform: scale(1.025);
+  }
+
+  &--danger-outline {
+    color: $darkRed;
+    border: 1px solid $darkRed;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: $darkRed;
+      opacity: 0.9;
+      transform: scale(1.025);
+    }
+    
+  }
+  
+
+  &--gray {
+    background-color: #222;
+    transition: all .3s ease-in-out;
+  }
+  &--gray:hover {
+    color: #fff;
+    opacity: 0.9;
+    transform: scale(1.025);
+  }
+
+  &--gray-outline {
+    border:1px solid #222;
+    color: #222;
+    transition: all .3s ease-in-out;
+  }
+  &--gray-outline:hover {
+    color: #fff;
+    background-color: #222;
+    opacity: 0.9;
+    transform: scale(1.025);
+  }
+
+  &--white {
+    background-color: #fff;
+    color: #173f58;
+  }
+
+  &--white:hover {
+    background-color: #ddd;
+  }
+
+  &--large {
+    font-size: 1.3rem;
+    padding: 16px 34px;
+    border-radius: 7px;
+    @mixin atSmall {
+      font-size: 1.9rem;
+    }
+  }
+
+  &--medium {
+    font-size: 1.1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+    @mixin atSmall {
+      font-size: 1rem;
+    }
+  }
+
+  &--inactive {
+    background-color: transparent;
+    cursor: default;
+    color: #333;
+  }
+}

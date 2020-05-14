@@ -1,0 +1,9 @@
+node_modules/
+.tmp/
+.vscode
+sshKey/
+
+debug.log
+
+.DS_Store
+
